@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" preserve-order="true" verbose="1" >
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    </listeners>
+    <test name="DataUpdateCapi" >
+        <classes >
+            <class name="Btjf_API.CAPI.CarSeller.DataUpdateCapi">
+                <methods  >
+                    <include name="advertList"/>
+                    <include name="bankList"/>
+                    <include name="brandList"/>
+                    <include name="brandList_2_6_0"/>
+                    <include name="breakRulesParamInfo"/>
+                    <include name="breakRulesParamInfoNew"/>
+                    <include name="bugRepairIsNeedUpdate"/>
+                    <!--<include name="datasUpdate"/>-->
+                    <include name="dataUpdataTest"/>
+                    <include name="eventJump"/>
+                    <include name="versionUpdate"/>
+                    <include name="factory_2_5_0"/>
+                    <include name="factory_2_6_0"/>
+                    <include name="findAuth_2_3_2"/>
+                    <!--<include name="htmlIsNeedUpdate"/>-->
+                    <include name="carSellList"/>
+                    <include name="latestVersion"/>
+                    <include name="modelList"/>
+                    <include name="modelList_2_6_0"/>
+                    <include name="reasonList"/>
+                    <include name="prefixURL_2_3_2"/>
+                    <include name="regionInfo"/>
+                    <include name="staticConfigList"/>
+                    <include name="styleList"/>
+                    <include name="styleList_2_6_0"/>
+                    <!--<include name="getVersionUpdate"/>-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

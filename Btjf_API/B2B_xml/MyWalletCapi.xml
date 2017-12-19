@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ICar" preserve-order="true" verbose="1" >
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    </listeners>
+    <test name="MyWalletCapi" >
+        <classes >
+            <class name="Btjf_API.CAPI.CarSeller.MyWalletCapi">
+                <methods  >
+                    <include name="myWalletAbleCoupon"/>
+                    <include name="myWalletBankCardDetail_2_4_0"/>
+                    <include name="myWalletNewGetBankCardInfo_2_4_0"/>
+                    <include name="myWalletNewFindSubBankCardInfo_2_4_0"/>
+                    <include name="myWalletNewAddBankCard_2_4_0"/>
+                    <include name="myWalletNewDrawIndex_2_4_0"/>
+                    <include name="myWalletDisableCoupon"/>
+                    <include name="myWalletIndex"/>
+                    <include name="myWalletNewUnbindBankCard_2_4_0"/>
+                    <include name="myWalletNewSaveBankCard_2_4_0"/>
+                    <include name="myWalletNewVerifyBankCard_2_4_0"/>
+                    <include name="myWalletPayIndex"/>
+                    <include name="myWalletPayIndex_2_5_1"/>
+                    <include name="myWalletOfflinePay"/>
+                    <include name="myWalletPay"/>
+                    <include name="myWalletPayMoneyNotSuccess"/>
+                    <include name="myWalletWithdrawDetail"/>
+                    <include name="myWalletWithdraw"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

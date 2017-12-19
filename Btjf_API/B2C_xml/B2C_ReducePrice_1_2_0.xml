@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="B2C" preserve-order="true" verbose="1" >
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    </listeners>
+    <test name="B2C_ReducePrice_1_2_0" >
+        <classes >
+            <class name="Btjf_API.CAPI.B2C.B2C_ReducePrice_1_2_0">
+                <methods  >
+                    <include name="mCardetail"/>
+                    <include name="mCodeSms"/>
+                    <include name="mNoticeConfig"/>
+                    <include name="mDepreciateNoticeList"/>
+                    <include name="depreciateNoticeDel"/>
+                    <include name="carCollectStatus"/>
+                    <include name="mMineIndexStatistics"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

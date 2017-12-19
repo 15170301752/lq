@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" verbose="1" >
+    <!--<listeners>-->
+        <!--<listener class-name = "Btjf_API.CAPI.Extend.MyTransFormer"/>-->
+        <!--<listener class-name="org.uncommons.reportng.HTMLReporter"/>-->
+    <!--</listeners>-->
+    <test name="MyTest" preserve-order="true">
+        <classes >
+            <class name="Btjf_API.CAPI.Test.MyTest" >
+                <methods>
+                    <include name="B"/>
+                    <include name="D"/>
+                    <include name="C"/>
+                    <include name="Z"/>
+                    <include name="A"/>
+                    <include name="F"/>
+                </methods>
+            </class>
+            <!--<class name="Btjf_API.CAPI.CarSeller_P0rSeller_P0.MyTestTwo"/>-->
+        </classes>
+    </test>
+    <test name="hehe">
+        <classes>
+
+        </classes>
+    </test>
+</suite>

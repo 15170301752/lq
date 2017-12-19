@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" verbose="1" >
+    <!--<parameter name="name" value="wang" />-->
+    <!--<parameter name="mobile" value="13800000001"/>-->
+    <listeners>
+        <listener class-name = "Btjf_API.CAPI.Extend.MyRetryListener"/>
+        <listener class-name = "Btjf_API.CAPI.Extend.TestngListener"/>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    </listeners>
+    <test name="MyTest" >
+        <classes >
+            <class name="Btjf_API.CAPI.Test.MyTransTest">
+                <!--<methods>-->
+                    <!--<include name="F"/>-->
+                    <!--<include name="A"/>-->
+                <!--</methods>-->
+            </class>
+        </classes>
+    </test>
+</suite>

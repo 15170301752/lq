@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration  status="WARN">
+    <properties>
+        <property name="RETRYLOG">失败方法重跑日志-</property>
+    </properties>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} %M - %msg%n"/>
+        </Console>
+        <File name="log" fileName="log/${date:yyyy-MM-dd HH-mm}.log" append="ture">
+            <PatternLayout charset="UTF-8" pattern="%d{HH:mm:ss:SSS} %M - %msg%xEx%n"/>
+        </File>
+        <File name="debug" fileName="log/${RETRYLOG}${date:MM-dd HH-mm}.log" append="ture">
+            <Filters>
+                <ThresholdFilter level="INFO" onMatch="DENY" onMisMatch="NEUTRAL"/>
+                <ThresholdFilter level="DEBUG" onMatch="ACCEPT" onMisMatch="DENY"/>
+            </Filters>
+            <!--<ThresholdFilter level="DEBUG" onMatch="DENY" onMisMatch="ACCEPT"/>-->
+            <PatternLayout charset="UTF-8" pattern="%d{HH:mm:ss:SSS} %M - %msg%xEx%n"/>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Logger name="Btjf_API.CAPI" level="all" additivity="false">
+            <AppenderRef ref = "Console"/>
+            <AppenderRef ref = "log"/>
+            <AppenderRef ref = "debug"/>
+        </Logger>
+        <Root level="info">
+            <AppenderRef ref = "Console"/>
+            <!--<AppenderRef ref = "log"/>-->
+        </Root>
+    </Loggers>
+</Configuration>

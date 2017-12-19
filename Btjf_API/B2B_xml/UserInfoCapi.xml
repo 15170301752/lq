@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" preserve-order="true" verbose="1" >
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    </listeners>
+    <test name="UserInfo" >
+        <classes >
+            <class name="Btjf_API.CAPI.CarSeller.UserInfoCapi">
+                <methods  >
+                    <include name="imUpdatePwd_2_3_2"/>
+                    <include name="info_2_5_0"/>
+                    <include name="payPwdReset"/>
+                    <include name="mSmsVerificationCode"/>
+                    <include name="payPwdUpdate"/>
+                    <include name="updateNew"/>
+                    <include name="voiceVertificationCode"/>
+                    <include name="userInfoUpdate"/>
+                    <include name="updateArea_2_5_0"/>
+                    <include name="updateName_2_5_0"/>
+                    <include name="updatePwd"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

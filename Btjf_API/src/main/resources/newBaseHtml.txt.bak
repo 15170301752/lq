@@ -1,0 +1,36 @@
+﻿<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus?">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>接口测试报告</title>
+	  <style>
+			table {
+				border-collapse: collapse;
+			}
+
+			table, td, th	{
+				border: 1px solid white;
+			}
+			/* th {background-color:#FFDDAA;} */
+			/* td {background-color:#DDDDDD;color:red} */
+			td {background-color:#FFCCCC;color:#880000}
+
+		</style>
+ </head>
+ <body>
+	<div class="tittle-header">
+		<div class="tittle-logo">
+			<img src="http://a2.qpic.cn/psb?/V11X9iB83fwRDv/qOuZe4FNeBhwtxlqFHUBpgkp3R8kV9jLwCZyuUgJ6HQ!/b/dAkBAAAAAAAA&bo=lwAzAAAAAAADB4Y!&rf=viewer_4" alt="bejf" />
+		</div>
+		<div tittle-name>
+			<h3 style="font-size:30px;">测试报告</h3>
+		</div>
+		<div tittle-date>
+			<tr>date      </tr>
+			<a href="report_url" target="_blank">查看完整报告</a>
+		</div>
+	</div>

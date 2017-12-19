@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Staff_API" preserve-order="true" verbose="1">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    </listeners>
+    <test name="XFD_Repayment">
+        <classes>
+            <class name="Btjf_API.CAPI.Staff.XFD_Repayment">
+                <methods>
+                    <include name="mCommonFileUpload_2_6_1_0"/>
+                    <include name="mIndexXFDCarCreate"/>
+                    <include name="mIndexXFDCarWaitVerList"/>
+                    <include name="mIndexXFDCarVerList"/>
+                    <include name="mCommonFileUpload_2_6_1_0"/>
+                    <include name="mIndexXFDCarCreate"/>
+                    <include name="mIndexXFDCarDelete"/>
+                    <include name="mIndexXFDCustomerList"/>
+                    <include name="mIndexXFDCustomerDetail"/>
+                    <include name="mIndexXFDCreateOrder"/>
+                    <include name="mIndexXFDCarUpdateState"/>
+                    <include name="mIndexXFDCustomerVerList"/>
+                    <include name="mIndexXFDCustomerOrderDetail"/>
+                    <include name="mIndexXFDOrderQr"/>
+                    <include name="mIndexXFDOrderStatistics"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>

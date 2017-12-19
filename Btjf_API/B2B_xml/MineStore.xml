@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ICar" preserve-order="true" verbose="1" >
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    </listeners>
+    <test name="MyWalletCapi" >
+        <classes >
+            <class name="Btjf_API.CAPI.CarSeller.MineStoreCapi">
+                <methods  >
+                    <include name="bStoreCarSellList_2_5_0"/>
+                    <include name="bStoreCarSoldList_2_5_0"/>
+                    <include name="bStoreDetail"/>
+                    <include name="bStoreDetail_2_5_0"/>
+                    <include name="bStorePerson_2_5_0"/>
+                    <include name="bStoreSearch_2_5_0"/>
+                    <include name="bStoreSearchStats_2_5_0"/>
+                    <include name="bStoreSearchStats_2_5_2"/>
+                    <include name="mStoreBrandList_2_5_0"/>
+                    <include name="mStoreBrandSelectList"/>
+                    <include name="mStoreCallSeller_2_4_0"/>
+                    <include name="mStoreCarAuditList"/>
+                    <include name="mStoreCarDown"/>
+                    <include name="mStoreCarDownList"/>
+                    <include name="mStoreCarNotPassList"/>
+                    <include name="mStoreCarSaleList"/>
+                    <include name="mStoreCarSellSuccess_2_5_0"/>
+                    <include name="mStoreCarSoldList"/>
+                    <include name="mStoreCarUp"/>
+                    <include name="mStoreCode_2_5_0"/>
+                    <include name="mStoreDetail_2_5_0"/>
+                    <include name="mStoreEdit"/>
+                    <include name="mStoreEdit_2_5_0"/>
+                    <include name="mStoreIdentity_2_4_0"/>
+                    <include name="mStoreIdentityDetail_2_4_0"/>
+                    <include name="mStoreIndex"/>
+                    <include name="mStoreIndex_2_5_0"/>
+                    <include name="mStoreInformation"/>
+                    <include name="mStoreMainModelAdd"/>
+                    <include name="mStoreMainModelDelete"/>
+                    <include name="mStoreMainModelList"/>
+                    <include name="mStoreOpen_2_5_0"/>
+                    <include name="mStorePhoto_2_5_0"/>
+                    <include name="mStoreReleaseVerify_2_5_0"/>
+                    <include name="mStoreSaleClueCalled_2_4_0"/>
+                    <include name="mStoreSaleClueNoCalled_2_4_0"/>
+                    <include name="mStoreSellDownList_2_5_0"/>
+                    <include name="mStoreSellSoldList_2_5_0"/>
+                    <include name="mStoreSellUpList_2_5_0"/>
+                    <include name="mStoreSelleDetail_2_4_0"/>
+                    <include name="mStoreStaffLeave_2_4_0"/>
+                    <include name="mStoreStoreCode_2_4_0"/>
+                    <include name="mStoreStoreCode_2_5_0"/>
+                    <include name="mStoreUserAdd"/>
+                    <include name="mStoreUserDelete"/>
+                    <include name="mStoreUserIdentityList"/>
+                    <include name="mStoreUserUserList"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

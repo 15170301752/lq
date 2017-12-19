@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ICar" preserve-order="true" verbose="1" >
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    </listeners>
+    <test name="AboutHistoryCapi" >
+        <classes >
+            <class name="Btjf_API.CAPI.CarSeller.AboutHistoryCapi">
+                <methods  >
+                    <include name="sBreakRulesHistoryList"/>
+                    <include name="sBreakRulesQuery"/>
+                    <include name="sBreakRulesQueryResult"/>
+                    <include name="sBreakRulesHistoryDelete"/>
+                    <include name="sBreakRulesQueryValidate"/>
+                    <include name="sEvaluateHistory"/>
+                    <include name="sEvaluateQuery"/>
+                    <include name="sEvaluateQueryResult"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

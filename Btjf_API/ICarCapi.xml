@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="B2B_API" preserve-order="true" verbose="1" >
+    <parameter name="excelName" value="BTJF_data" />
+    <parameter name="sheetName" value="P0_data,BTWallet_P0,2.6.1_P0_data"/>
+    <listeners>
+        <listener class-name = "Btjf_API.CAPI.Extend.MyRetryListener"/>
+        <listener class-name = "Btjf_API.CAPI.Extend.TestngListener"/>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    </listeners>
+    <test name="BT_API" >
+        <classes >
+            <class name="Btjf_API.CAPI.CarSeller.ICarSuite"/>
+            <class name="Btjf_API.CAPI.CarSeller.ICarCapi">
+                <methods >
+                    <include name="voiceVerificationCode"/>
+                    <include name="smsVerificationCode"/>
+                    <include name="register"/>
+                    <include name="logins"/>
+                    <include name="bindDeviceToken"/>
+                    <include name="login_2_3_2"/>
+                    <include name="accComplete_2_4_0"/>
+                    <include name="accComplete_2_5_0"/>
+                    <include name="cerAgain_2_4_1"/>
+                    <include name="cerAgain_2_5_0"/>
+                    <include name="smsVerificationCode_2_4_1"/>
+                    <include name="cerComplete_2_4_0"/>
+                    <include name="cerComplete_2_5_0"/>
+                    <include name="cerInfo_2_4_1"/>
+                    <include name="cerMessageSwitch_2_4_1"/>
+                    <include name="cerUnPastSearch_2_4_0"/>
+                    <!--这个接口有问题-->
+                    <!--<include name="indexAdvertPicture"/>-->
+                    <include name="Index"/>
+                    <include name="resetPwdVoiceVerificationCode"/>
+                    <include name="resetPwdSmsVerificationCode"/>
+                    <include name="resetPwd"/>
+                    <include name="logout"/>
+                </methods>
+            </class>
+            <class name="Btjf_API.CAPI.CarSeller.CarInterCapi">
+                <methods  >
+                    <include name="carNum_2_4_0"/>
+                    <include name="carNum_2_5_0"/>
+                    <include name="carConfigDetail_2_4_0"/>
+                    <include name="carCreateSaleKey_2_4_0"/>
+                    <!--这个接口好像已经不在被使用-->
+                    <!--<include name="carDetail"/>-->
+                    <include name="carDetail_2_4_0"/>
+                    <include name="carDetail_2_5_0"/>
+                    <include name="carPublish_2_4_0"/>
+                    <include name="carSearch_2_5_0"/>
+                    <include name="carSearchStats_2_5_0"/>
+                    <include name="cCarCapableMortgageList"/>
+                    <include name="carEvaluate"/>
+                    <include name="carEvaluateForDeposit"/>
+                    <include name="carIncompleteList"/>
+                    <include name="carSellList"/>
+                    <include name="carCapableAndMortgagedList"/>
+                    <include name="mCarCapableMortgageList"/>
+                    <include name="carComplete"/>
+                    <include name="carMortgageAable"/>
+                    <include name="carMortgageAlready"/>
+                    <include name="carMortgageCheckingCarsList"/>
+                    <include name="carMortgageDetail"/>
+                    <include name="carMortgageIncompleteCarsList"/>
+                    <include name="carMortgageIndex"/>
+                    <include name="carMortgageNopassCarsList"/>
+                    <include name="carMortgageWaitInventoryCarsList"/>
+                </methods>
+            </class>
+            <class name="Btjf_API.CAPI.CarSeller.SanBaoCapi">
+                <methods  >
+                    <include name="checkDepositStatus"/>
+                    <include name="bDepositValidInfo"/>
+                    <include name="bDepositUseLimit"/>
+                    <include name="bDepositApply"/>
+                    <!--<include name="iDepositIndex"/>-->
+                    <include name="iDepositNewValidatePayeeInfo"/>
+                    <include name="iDepositUpLimit"/>
+                    <include name="iDepositValidInfo"/>
+                    <!--这个接口报错，待确认是否还在使用-->
+                    <!--<include name="iDepositValidatePayeeInfo"/>-->
+                    <include name="iDepositApply"/>
+                    <include name="iDepositTradingDetail"/>
+                    <include name="iDepositNorepaymentDetail"/>
+                    <include name="iDepositNewRepayDeposit"/>
+                    <include name="iDepositRepaymentDetail"/>
+                    <!--<include name="iScbIndex"/>--> <!--<2.6以后。三宝的Index接口都不在使用>-->
+                    <!--<include name="iScbIndex_2_6_0"/>-->
+                    <include name="iScbApplyValid_2_3_2"/>
+                    <include name="iScbInterestAndBail"/>
+                    <include name="iScbApply"/>
+                    <include name="iScbNorepaymentDetail"/>
+                    <include name="iScbRepaymentSelectCar"/>
+                    <include name="iScbNewRepayment"/>
+                    <include name="iScbRepaymentRecords"/>
+                    <include name="iScbRepaymentRecordDetail"/>
+                    <!--<include name="iYsbIndex_2_3_2"/>-->
+                    <!--<include name="iYsbIndex_2_6_0"/>-->
+                    <include name="iYsbRateInfo_2_3_2"/>
+                    <include name="iYsbLoanApply_2_3_2"/>
+                    <include name="iYsbMaxRedPacketMoney_2_3_2"/>
+                    <include name="iYsbApplyRedPacket_2_3_2"/>
+                    <include name="iYsbAuditedDetail_2_3_2"/>
+                    <include name="iYsbUnRepaymentDetail_2_3_2"/>
+                    <include name="iYsbDetail_2_6_0_1"/>
+                    <include name="iYsbRepay_2_3_2"/>
+                    <include name="iYsbRepaymentDetail_2_3_2"/>
+                </methods>
+            </class>
+            <class name="Btjf_API.CAPI.CarSeller.MyWalletCapi">
+                <methods  >
+                    <include name="myWalletAbleCoupon"/>
+                    <include name="myWalletBankCardDetail_2_4_0"/>
+                    <include name="myWalletNewGetBankCardInfo_2_4_0"/>
+                    <include name="myWalletNewFindSubBankCardInfo_2_4_0"/>
+                    <include name="myWalletNewAddBankCard_2_4_0"/>
+                    <include name="myWalletNewDrawIndex_2_4_0"/>
+                    <include name="myWalletDisableCoupon"/>
+                    <include name="myWalletIndex"/>
+                    <include name="myWalletNewUnbindBankCard_2_4_0"/>
+                    <include name="myWalletNewSaveBankCard_2_4_0"/>
+                    <include name="myWalletNewVerifyBankCard_2_4_0"/>
+                    <include name="myWalletPayIndex"/>
+                    <include name="myWalletPayIndex_2_5_1"/>
+                    <include name="myWalletOfflinePay"/>
+                    <include name="myWalletPay"/>
+                    <include name="myWalletPayMoneyNotSuccess"/>
+                    <include name="myWalletWithdrawDetail"/>
+                    <include name="myWalletWithdraw"/>
+                </methods>
+            </class>
+            <class name="Btjf_API.CAPI.CarSeller.MineStoreCapi">
+                <methods  >
+                    <include name="bStoreCarSellList_2_5_0"/>
+                    <include name="bStoreCarSoldList_2_5_0"/>
+                    <include name="bStoreDetail"/>
+                    <include name="bStoreDetail_2_5_0"/>
+                    <include name="bStorePerson_2_5_0"/>
+                    <include name="bStoreSearch_2_5_0"/>
+                    <include name="bStoreSearchStats_2_5_0"/>
+                    <include name="bStoreSearchStats_2_5_2"/>
+                    <include name="mStoreBrandList_2_5_0"/>
+                    <include name="mStoreBrandSelectList"/>
+                    <include name="mStoreCallSeller_2_4_0"/>
+                    <include name="mStoreCarAuditList"/>
+                    <include name="mStoreCarDown"/>
+                    <include name="mStoreCarDownList"/>
+                    <include name="mStoreCarNotPassList"/>
+                    <include name="mStoreCarSaleList"/>
+                    <include name="mStoreCarSellSuccess_2_5_0"/>
+                    <include name="mStoreCarSoldList"/>
+                    <include name="mStoreCarUp"/>
+                    <include name="mStoreCode_2_5_0"/>
+                    <include name="mStoreDetail_2_5_0"/>
+                    <include name="mStoreEdit"/>
+                    <include name="mStoreEdit_2_5_0"/>
+                    <include name="mStoreIdentity_2_4_0"/>
+                    <include name="mStoreIdentityDetail_2_4_0"/>
+                    <include name="mStoreIndex"/>
+                    <include name="mStoreIndex_2_5_0"/>
+                    <include name="mStoreInformation"/>
+                    <include name="mStoreMainModelAdd"/>
+                    <include name="mStoreMainModelDelete"/>
+                    <include name="mStoreMainModelList"/>
+                    <include name="mStoreOpen_2_5_0"/>
+                    <include name="mStorePhoto_2_5_0"/>
+                    <include name="mStoreReleaseVerify_2_5_0"/>
+                    <include name="mStoreSaleClueCalled_2_4_0"/>
+                    <include name="mStoreSaleClueNoCalled_2_4_0"/>
+                    <include name="mStoreSellDownList_2_5_0"/>
+                    <include name="mStoreSellSoldList_2_5_0"/>
+                    <include name="mStoreSellUpList_2_5_0"/>
+                    <include name="mStoreSelleDetail_2_4_0"/>
+                </methods>
+            </class>
+            <class name="Btjf_API.CAPI.CarSeller.MineInfoCapi">
+                <methods  >
+                    <include name="mAvailableFinance"/>
+                    <include name="mBankAccountDetail"/>
+                    <include name="mBindMobileSendCode_2_4_0"/>
+                    <include name="mBindMobileSendCode_2_4_0_2"/>
+                    <include name="mIndex"/>
+                    <include name="mIndex_2_5_0"/>
+                    <include name="mIndex_2_6_0"/>
+                    <include name="mManageIndex_2_6_0"/>
+                    <include name="mSuggest"/>
+                    <include name="mUpdateMobile_2_4_0"/>
+                    <include name="mValidateMobile_2_4_0"/>
+                    <include name="mViewDelete"/>
+                    <include name="mViewList"/>
+                    <include name="mCollectionCarList"/>
+                    <include name="mCollectionCarCollect"/>
+                    <include name="mCollectionCarCancel"/>
+                    <include name="mCollectionCustCollect"/>
+                    <include name="mCollectionCustCancel"/>
+                    <include name="mCollectionCustList"/>
+                    <include name="mCollectionCustList_2_5_0"/>
+                </methods>
+            </class>
+            <class name="Btjf_API.CAPI.CarSeller.Sale2_6_1Capi">
+                <methods  >
+                    <include name="saleCarHot"/>
+                    <include name="saleFirstPage"/>
+                    <include name="askPriceRecord"/>
+                    <include name="dataGetInterface"/>
+                    <include name="askSubmitInterface"/>
+                    <include name="askStatusInterface"/>
+                    <include name="createSalesLeads"/>
+                    <include name="salesLeadsList"/>
+                    <include name="mCommonFileUpload_2_6_1_0"/>
+                    <include name="mBusinessCarPublish_2_6_1_0"/>
+                </methods>
+            </class>
+            <class name="Btjf_API.CAPI.CarSeller.PackageControllerCapi">
+                <methods  >
+                    <include name="buyPackage"/>
+                    <include name="hasUnpaid"/>
+                    <include name="packageList"/>
+                    <include name="orderClose"/>
+                    <include name="buyRecord"/>
+                    <include name="packageStatus"/>
+                </methods>
+            </class>
+            <class name="Btjf_API.CAPI.CarSeller.CreditGetCapi">
+                <methods  >
+                    <include name="CreditApally"/>
+                    <include name="applyAgain"/>
+                    <include name="applyRecoreList"/>
+                    <include name="creditDetail"/>
+                    <include name="creditInit"/>
+                </methods>
+            </class>
+            <class name="Btjf_API.CAPI.CarSeller.DataUpdateCapi">
+                <methods  >
+                    <include name="advertList"/>
+                    <include name="bankList"/>
+                    <include name="brandList"/>
+                    <include name="brandList_2_6_0"/>
+                    <include name="breakRulesParamInfo"/>
+                    <include name="breakRulesParamInfoNew"/>
+                    <include name="bugRepairIsNeedUpdate"/>
+                    <!--<include name="datasUpdate"/>-->
+                    <include name="dataUpdataTest"/>
+                    <include name="eventJump"/>
+                    <include name="versionUpdate"/>
+                    <include name="factory_2_5_0"/>
+                    <include name="factory_2_6_0"/>
+                    <include name="findAuth_2_3_2"/>
+                    <!--<include name="htmlIsNeedUpdate"/>-->
+                    <include name="carSellList"/>
+                    <include name="latestVersion"/>
+                    <include name="modelList"/>
+                    <include name="modelList_2_6_0"/>
+                    <include name="reasonList"/>
+                    <include name="prefixURL_2_3_2"/>
+                    <include name="regionInfo"/>
+                    <include name="staticConfigList"/>
+                    <include name="styleList"/>
+                    <include name="styleList_2_6_0"/>
+                    <!--<include name="getVersionUpdate"/>-->
+                </methods>
+            </class>
+            <class name="Btjf_API.CAPI.CarSeller.UserInfoCapi">
+                <methods  >
+                    <include name="imUpdatePwd_2_3_2"/>
+                    <include name="info_2_5_0"/>
+                    <include name="payPwdReset"/>
+                    <include name="mSmsVerificationCode"/>
+                    <include name="payPwdUpdate"/>
+                    <include name="updateNew"/>
+                    <include name="voiceVertificationCode"/>
+                    <include name="userInfoUpdate"/>
+                    <include name="updateArea_2_5_0"/>
+                    <include name="updateName_2_5_0"/>
+                    <include name="updatePwd"/>
+                </methods>
+            </class>
+            <class name="Btjf_API.CAPI.CarSeller.AboutHistoryCapi">
+                <methods  >
+                    <include name="sBreakRulesHistoryList"/>
+                    <include name="sBreakRulesQuery"/>
+                    <include name="sBreakRulesQueryResult"/>
+                    <include name="sBreakRulesHistoryDelete"/>
+                    <include name="sBreakRulesQueryValidate"/>
+                    <include name="sEvaluateHistory"/>
+                    <include name="sEvaluateQuery"/>
+                    <include name="sEvaluateQueryResult"/>
+                </methods>
+            </class>
+            <!--<class name="Btjf_API.CAPI.CarSeller.SellKey_3_2_0">-->
+                <!--<methods >-->
+                    <!--<include name="mSellKeyIndex"/>-->
+                    <!--<include name="mSellKeyList"/>-->
+                    <!--<include name="mSellKeyDetail"/>-->
+                    <!--<include name="mSellKeyCollectList"/>-->
+                    <!--<include name="mSellKeyHandle"/>-->
+                <!--</methods>-->
+            <!--</class>-->
+        </classes>
+    </test>
+</suite>

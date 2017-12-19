@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ICar" preserve-order="true" verbose="1" >
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    </listeners>
+    <test name="MineInfoCapi" >
+        <classes >
+            <class name="Btjf_API.CAPI.CarSeller.MineInfoCapi">
+                <methods  >
+                    <include name="mAvailableFinance"/>
+                    <include name="mBankAccountDetail"/>
+                    <include name="mBindMobileSendCode_2_4_0"/>
+                    <include name="mBindMobileSendCode_2_4_0_2"/>
+                    <include name="mIndex"/>
+                    <include name="mIndex_2_5_0"/>
+                    <include name="mIndex_2_6_0"/>
+                    <include name="mManageIndex_2_6_0"/>
+                    <include name="mSuggest"/>
+                    <include name="mUpdateMobile_2_4_0"/>
+                    <include name="mValidateMobile_2_4_0"/>
+                    <include name="mViewDelete"/>
+                    <include name="mViewList"/>
+                    <include name="mCollectionCarList"/>
+                    <include name="mCollectionCarCollect"/>
+                    <include name="mCollectionCarCancel"/>
+                    <include name="mCollectionCustCollect"/>
+                    <include name="mCollectionCustCancel"/>
+                    <include name="mCollectionCustList"/>
+                    <include name="mCollectionCustList_2_5_0"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

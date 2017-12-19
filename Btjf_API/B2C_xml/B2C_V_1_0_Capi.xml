@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="B2C" preserve-order="true" verbose="1" >
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    </listeners>
+    <test name="B2C_V_1_0_Capi" >
+        <classes >
+            <class name="Btjf_API.CAPI.B2C.B2C_V_1_0_Capi">
+                <methods  >
+                    <include name="approvalorderDetail"/>
+                    <include name="approvalorderConfirm_1_0_0_0"/>
+                    <include name="iApprovalorderCheck"/>
+                    <include name="approvalorderIsbind1_0_0_0"/>
+                    <include name="repaymentWaitrepaymentList"/>
+                    <include name="repaymentRepaymentedList"/>
+                    <include name="repaymentPaymentOrder"/>
+                    <include name="cashierPaymentInfo"/>
+                    <include name="repaymentRepaymentCardInfo"/>
+                    <include name="cardIsbind"/>
+                    <include name="cashierPaymentPay"/>
+                    <include name="approvalorderConfirms"/>
+                    <include name="approvalorderList"/>
+                    <include name="bankcardBind"/>
+                    <include name="bindFirststep"/>
+                    <include name="bindNext"/>
+                    <include name="bankList1_0_0_0"/>
+                    <include name="branchList"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

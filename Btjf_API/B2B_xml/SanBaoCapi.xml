@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" preserve-order="true" verbose="1" >
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    </listeners>
+    <test name="SanBaoCapi" >
+        <classes >
+            <!--<2.6版本以后，三宝接口版本强制为2.6.0.0以上，以下版本不支持使用三宝>-->
+            <class name="Btjf_API.CAPI.CarSeller.SanBaoCapi">
+                <methods  >
+                    <include name="checkDepositStatus"/>
+                    <include name="bDepositValidInfo"/>
+                    <include name="bDepositUseLimit"/>
+                    <include name="bDepositApply"/>
+                    <!--<2.6以后不在使用该接口>-->
+                    <!--<include name="iDepositIndex"/>-->
+                    <include name="iDepositNewValidatePayeeInfo"/>
+                    <include name="iDepositUpLimit"/>
+                    <include name="iDepositValidInfo"/>
+                    <!--这个接口报错，待确认是否还在使用-->
+                    <!--<include name="iDepositValidatePayeeInfo"/>-->
+                    <include name="iDepositApply"/>
+                    <include name="iDepositTradingDetail"/>
+                    <include name="iDepositNorepaymentDetail"/>
+                    <include name="iDepositNewRepayDeposit"/>
+                    <include name="iDepositRepaymentDetail"/>
+                    <!--<2.6以后不在使用该接口>-->
+                    <!--<include name="iScbIndex"/>-->
+                    <!--<include name="iScbIndex_2_6_0"/>-->
+                    <include name="iScbApplyValid_2_3_2"/>
+                    <include name="iScbInterestAndBail"/>
+                    <include name="iScbApply"/>
+                    <include name="iScbNorepaymentDetail"/>
+                    <include name="iScbRepaymentSelectCar"/>
+                    <include name="iScbNewRepayment"/>
+                    <include name="iScbRepaymentRecords"/>
+                    <include name="iScbRepaymentRecordDetail"/>
+                    <!--<2.6以后不在使用该接口>-->
+                    <!--<include name="iYsbIndex_2_3_2"/>-->
+                    <!--<include name="iYsbIndex_2_6_0"/>-->
+                    <include name="iYsbRateInfo_2_3_2"/>
+                    <include name="iYsbLoanApply_2_3_2"/>
+                    <include name="iYsbMaxRedPacketMoney_2_3_2"/>
+                    <include name="iYsbApplyRedPacket_2_3_2"/>
+                    <include name="iYsbAuditedDetail_2_3_2"/>
+                    <include name="iYsbUnRepaymentDetail_2_3_2"/>
+                    <include name="iYsbDetail_2_6_0_1"/>
+                    <include name="iYsbRepay_2_3_2"/>
+                    <include name="iYsbRepaymentDetail_2_3_2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

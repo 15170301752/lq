@@ -1,0 +1,56 @@
+﻿<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus?">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>接口测试报告</title>
+	  <style>
+			table {
+				border-collapse: collapse;
+			}
+
+			table, td, th	{
+				border: 1px solid white;
+			}
+			/* th {background-color:#FFDDAA;} */
+			/* td {background-color:#DDDDDD;color:red} */
+			td {background-color:#FFCCCC;color:#880000}
+
+		</style>
+ </head>
+ <body>
+	<div class="tittle-header">
+		<div class="tittle-logo">
+			<img src="http://a2.qpic.cn/psb?/V11X9iB83fwRDv/qOuZe4FNeBhwtxlqFHUBpgkp3R8kV9jLwCZyuUgJ6HQ!/b/dAkBAAAAAAAA&bo=lwAzAAAAAAADB4Y!&rf=viewer_4" alt="bejf" />
+		</div>
+		<div tittle-name>
+			<h3 style="font-size:30px;">测试报告</h3>
+		</div>
+		<div tittle-date>
+			<tr>date      </tr>
+			<a href="report_url" target="_blank">查看完整报告</a>
+		</div>
+	</div>
+	<div style="height:50px"></div>
+	<div style="width:auto;height:1px;margin:0px auto;padding:0px;background-color:#D5D5D5;overflow:hidden;"></div>
+	<div style="height:20px"></div>
+	<ul style="list-style:none;">
+		<li style="float:left;margin-left:10px;font-size:20px;font-weight:bold;height:5px">测试通过: <span style="background-color:green;border:1px black solid; padding:4px 5px ;">SUCCESSCOUNT</sapn></li>
+		<li style="float:left;margin-left:30px;font-size:20px;font-weight:bold;height:5px">测试失败: <span style="background-color:red;border:1px black solid;padding:4px 5px ;">FAILCOUNT</span></li>
+		<li style="float:left;margin-left:30px;font-size:20px;font-weight:bold;height:5px">测试忽略: <span style="background-color:yellow;border:1px black solid;padding:4px 5px ;">SKIPCOUNT</span></li>
+	</ul>
+	<div style="height:60px"></div>
+	<div style="width:auto;height:1px;margin:0px auto;padding:0px;background-color:#D5D5D5;overflow:hidden;"></div>
+	<div style="height:10px"></div>
+	<table width="100%" height="80" >
+		<thead align="left">
+	  		<tr>
+	  		  <th width="18%">接口方法名</th>
+			  <th width="32%">接口名称</th>
+	  		  <th width="50%">接口路径</th>
+	  		</tr>
+		</thead>
+		<tbody align="left">

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" preserve-order="true" verbose="1" >
+    <!--李强 2017.2.22-->
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    </listeners>
+    <test name="Sale2_6_1" >
+        <classes >
+            <class name="Btjf_API.CAPI.CarSeller.Sale2_6_1Capi">
+                <methods  >
+                    <include name="saleCarHot"/>
+                    <include name="saleFirstPage"/>
+                    <include name="askPriceRecord"/>
+                    <include name="dataGetInterface"/>
+                    <include name="askSubmitInterface"/>
+                    <include name="askStatusInterface"/>
+                    <include name="createSalesLeads"/>
+                    <include name="salesLeadsList"/>
+                    <include name="mCommonFileUpload_2_6_1_0"/>
+                    <include name="mBusinessCarPublish_2_6_1_0"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

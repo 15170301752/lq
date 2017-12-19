@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="B2C_API" preserve-order="true" verbose="1" >
+    <parameter name="excelName" value="B2C_data" />
+    <parameter name="sheetName" value="P0_data,P1_data"/>
+    <listeners>
+        <listener class-name = "Btjf_API.CAPI.Extend.MyRetryListener"/>
+        <listener class-name = "Btjf_API.CAPI.Extend.TestngListener"/>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+    <test name="B2C_Api" >
+        <classes >
+            <class name="Btjf_API.CAPI.B2C.B2cSuite"/>
+            <!--<class name="Btjf_API.CAPI.B2CC_SearchIllegalCapi">-->
+                <!--<methods  >-->
+                    <!--<include name="voiceVerificationCode"/>-->
+                    <!--<include name="smsverificationCode"/>-->
+                    <!--<include name="login1_0_0_0"/>-->
+                    <!--<include name="binddevicetoken1_0_0_0"/>-->
+                    <!--<include name="evaluateQuery"/>-->
+                    <!--<include name="evaluateHistory"/>-->
+                    <!--<include name="evaluateQueryResult"/>-->
+                    <!--<include name="queryValidate"/>-->
+                    <!--<include name="breakrulesQuery"/>-->
+                    <!--<include name="breakrulesHistoryList"/>-->
+                    <!--<include name="breakrulesQueryResult"/>-->
+                    <!--<include name="breakrulesHistoryDelete"/>-->
+                <!--</methods>-->
+            <!--</class>-->
+            <!--<class name="Btjf_API.CAPI.B2CC_SalePotCapi">-->
+                <!--<methods>-->
+                    <!--<include name="mServiceDividestageApplay"/>-->
+                    <!--<include name="mBusinessDividestageApply"/>-->
+                    <!--<include name="mBusinessDividestageApplyrecord"/>-->
+                    <!--<include name="mBusinessDividestageApplydetail"/>-->
+                    <!--<include name="mBusinessDividestageRecommendCar"/>-->
+                    <!--<include name="mSalekeyApply"/>-->
+                    <!--<include name="mSalekeySearch"/>-->
+                    <!--<include name="mSalekeyDelete"/>-->
+                    <!--<include name="mCollectionCarCollect"/>-->
+                    <!--<include name="mCollectionCarList"/>-->
+                    <!--<include name="mCollectionCarCancel"/>-->
+                    <!--<include name="mBrowseList"/>-->
+                    <!--<include name="mBrowseDelete"/>-->
+                <!--</methods>-->
+            <!--</class>-->
+            <class name="Btjf_API.CAPI.B2C.B2C_CarBargain_1_2_0">
+                <methods>
+                    <include name="mBusinessCarUserCheckBargain"/>
+                    <include name="mBusinessCarUserAddBargain"/>
+                    <include name="mBusinessBargainCarDetail"/>
+                    <include name="mMineCollectionCarBargainList"/>
+                    <include name="mMineCollectionCarUserDelBargain"/>
+                    <include name="mBusinessCarUserCheckBargainCode"/>
+                </methods>
+            </class>
+            <class name="Btjf_API.CAPI.B2C.B2C_Notice_1_2_0">
+                <methods  >
+                    <include name="mNoticeUnRead"/>
+                    <include name="mNoticeList"/>
+                    <include name="mNoticeRead"/>
+                </methods>
+            </class>
+            <class name="Btjf_API.CAPI.B2C.B2C_ReducePrice_1_2_0">
+                <methods  >
+                    <include name="mCardetail"/>
+                    <include name="mCodeSms"/>
+                    <include name="mNoticeConfig"/>
+                    <include name="mDepreciateNoticeList"/>
+                    <include name="depreciateNoticeDel"/>
+                    <include name="carCollectStatus"/>
+                    <include name="mMineIndexStatistics"/>
+                </methods>
+            </class>
+            <class name="Btjf_API.CAPI.B2C.B2C_Subscription_1_2_0">
+                <methods  >
+                    <include name="mSubscriptionSubmit"/>
+                    <include name="mSubscriptionList"/>
+                    <include name="mSubscriptionDetail"/>
+                    <include name="mSubscriptionDelete"/>
+                </methods>
+            </class>
+            <class name="Btjf_API.CAPI.B2C.B2C_1_4_0">
+                <methods  >
+                    <include name="mBusinessCarSearch"/>
+                    <include name="mMineFeedbackMenu"/>
+                    <include name="mMineFeedbackSuggest"/>
+                    <include name="mMineBuycarIntentionList"/>
+                    <include name="mBusinessBuycarIntentionApply"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

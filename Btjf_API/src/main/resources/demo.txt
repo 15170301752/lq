@@ -1,0 +1,56 @@
+﻿<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus?">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>接口测试报告</title>
+	  <style>
+			table {
+				border-collapse: collapse;
+			}
+
+			table, td, th	{
+				border: 1px solid white;
+			}
+			/* th {background-color:#FFDDAA;} */
+			/* td {background-color:#DDDDDD;color:red} */
+			td {background-color:#FFCCCC;color:#880000}
+
+		</style>
+ </head>
+ <body>
+	<div class="tittle-header">
+		<div class="tittle-logo">
+			<img src="http://a2.qpic.cn/psb?/V11X9iB83fwRDv/qOuZe4FNeBhwtxlqFHUBpgkp3R8kV9jLwCZyuUgJ6HQ!/b/dAkBAAAAAAAA&bo=lwAzAAAAAAADB4Y!&rf=viewer_4" alt="bejf" />
+		</div>
+		<div tittle-name>
+			<h3 style="font-size:30px;">测试报告</h3>
+		</div>
+		<div tittle-2016-12-03 14:54:10>
+			<tr>2016-12-03 14:54:10      </tr>
+			<a href="http://192.168.100.158:8080/html/index.html" target="_blank">查看完整报告</a>
+		</div>
+	</div>
+	<div style="height:50px"></div>
+	<div style="width:auto;height:1px;margin:0px auto;padding:0px;background-color:#D5D5D5;overflow:hidden;"></div>
+	<div style="height:20px"></div>
+	<ul style="list-style:none;">
+		<li style="float:left;margin-left:10px;font-size:20px;font-weight:bold;height:5px">测试通过: <span style="background-color:green;border:1px black solid; padding:4px 5px ;">23</sapn></li>
+		<li style="float:left;margin-left:30px;font-size:20px;font-weight:bold;height:5px">测试失败: <span style="background-color:red;border:1px black solid;padding:4px 5px ;">25</span></li>
+		<li style="float:left;margin-left:30px;font-size:20px;font-weight:bold;height:5px">测试忽略: <span style="background-color:yellow;border:1px black solid;padding:4px 5px ;">0</span></li>
+	</ul>
+	<div style="height:60px"></div>
+	<div style="width:auto;height:1px;margin:0px auto;padding:0px;background-color:#D5D5D5;overflow:hidden;"></div>
+	<div style="height:10px"></div>
+	<table width="100%" height="80" >
+		<thead align="left">
+	  		<tr>
+	  		  <th>失败接口名</th>
+	  		  <th>接口路径</th>
+	  		</tr>
+		</thead>
+		<tbody align="left">
+<tr><td>accComplete_2_4_0</td><td>/m/mine/account/complete/2_4_0</td></tr><tr><td>accComplete_2_5_0</td><td>/m/mine/account/complete/2_5_0</td></tr><tr><td>cerAgain_2_4_1</td><td>/m/mine/certification/again/2_4_1</td></tr><tr><td>cerAgain_2_5_1</td><td>/m/mine/certification/again/2_5_0</td></tr><tr><td>cerComplete_2_4_0</td><td>/m/mine/certification/complete/2_4_0</td></tr><tr><td>cerComplete_2_5_0</td><td>/m/mine/certification/complete/2_5_0</td></tr><tr><td>cerMessageSwitch_2_4_1</td><td>/m/mine/certification/MessageSwitch/2_4_1</td></tr><tr><td>indexAdvertPicture</td><td>/m/index/advertisementPicture</td></tr><tr><td>carPublish_2_4_0</td><td>/m/business/car/publish/2_4_0</td></tr><tr><td>cCarCapableMortgageList</td><td>/m/common/cust/car/capableMortgageList</td></tr><tr><td>carEvaluate</td><td>/m/common/cust/car/evaluate</td></tr><tr><td>carEvaluateForDeposit</td><td>/m/common/cust/car/evaluateForDeposit</td></tr><tr><td>carIncompleteList</td><td>/m/common/cust/car/incompleteList</td></tr><tr><td>carSellList</td><td>/m/common/cust/car/sellList</td></tr><tr><td>carCapableAndMortgagedList</td><td>/m/mine/car/capableAndMortgagedList</td></tr><tr><td>mCarCapableMortgageList</td><td>/m/mine/car/capableMortgageList</td></tr><tr><td>carComplete</td><td>/m/mine/car/complete</td></tr><tr><td>carMortgageAable</td><td>/m/mine/car/mortgage/able</td></tr><tr><td>carMortgageAlready</td><td>/m/mine/car/mortgage/already</td></tr><tr><td>carMortgageCheckingCarsList</td><td>/m/mine/car/mortgage/checkingCarsList</td></tr><tr><td>carMortgageDetail</td><td>/m/mine/car/mortgage/Detail</td></tr><tr><td>carMortgageIncompleteCarsList</td><td>/m/mine/car/mortgage/incompleteCarsList</td></tr><tr><td>carMortgageIndex</td><td>/m/mine/car/mortgage/index</td></tr><tr><td>carMortgageNopassCarsList</td><td>/m/mine/car/mortgage/nopassCarsList</td></tr><tr><td>carMortgageWaitInventoryCarsList</td><td>/m/mine/car/mortgage/waitInventoryCarsList</td></tr></tbody></table></body></html>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="B2C" preserve-order="true" verbose="1" >
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    </listeners>
+    <test name="B2C_SearchIllegalCapi" >
+        <classes >
+            <class name="Btjf_API.CAPI.B2C.B2C_SearchIllegalCapi">
+                <methods  >
+                    <include name="voiceVerificationCode"/>
+                    <include name="smsverificationCode"/>
+                    <include name="login1_0_0_0"/>
+                    <include name="binddevicetoken1_0_0_0"/>
+                    <include name="evaluateQuery"/>
+                    <include name="evaluateHistory"/>
+                    <include name="evaluateQueryResult"/>
+                    <include name="queryValidate"/>
+                    <include name="breakrulesQuery"/>
+                    <include name="breakrulesHistoryList"/>
+                    <include name="breakrulesQueryResult"/>
+                    <include name="breakrulesHistoryDelete"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

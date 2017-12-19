@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ICar" preserve-order="true" verbose="1" >
+    <listeners>
+        <listener class-name = "Btjf_API.CAPI.Extend.MyRetryListener"/>
+        <listener class-name = "Btjf_API.CAPI.Extend.TestngListener"/>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    </listeners>
+    <test name="SellKey_3_2_0" >
+        <classes >
+            <class name="Btjf_API.CAPI.CarSeller.SellKey_3_2_0">
+                <methods >
+                    <include name="mSellKeyIndex"/>
+                    <include name="mSellKeyList"/>
+                    <include name="mSellKeyDetail"/>
+                    <include name="mSellKeyCollectList"/>
+                    <include name="mSellKeyHandle"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
